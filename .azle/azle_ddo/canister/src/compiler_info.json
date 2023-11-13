@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"readMembers","composite":false},{"name":"readCandidates","composite":false}],"updates":[{"name":"createMember"},{"name":"createCandidate"}],"callbacks":{}}}
