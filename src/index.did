@@ -1,0 +1,6 @@
+service: () -> {
+    createCandidate: (text) -> (record {id:principal; username:text; voteResults:vec principal; createdAt:nat64});
+    createMember: (text) -> (record {id:principal; username:text; createdAt:nat64; vote:vec principal});
+    readCandidates: () -> (vec record {id:principal; username:text; voteResults:vec principal; createdAt:nat64}) query;
+    readMembers: () -> (vec record {id:principal; username:text; createdAt:nat64; vote:vec principal}) query;
+}

@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "azle_ddo": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle azle_ddo",
+            "wasm": ".azle/azle_ddo/azle_ddo.wasm",
+            "gzip": true
+        }
+    }
+}
+
