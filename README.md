@@ -1,96 +1,79 @@
-# azle_ddo - Certificate of Origin Validation Platform
+EcoTrace
 
-azle_ddo is a decentralized platform built on the Internet Computer Protocol (ICP), providing a robust system for validating Certificate of Origin for products. The platform employs a three-layer validation approach, utilizing DAOs for Producers, IoT devices, and Certification, ensuring the authenticity and reliability of the origin certification.
+Descripción del Proyecto
+EcoTrace es una plataforma de software desarrollada utilizando Motoko, azle y TypeScript, basada en el ICP (Protocolo de Computación en Internet). Ofrece una variedad de funcionalidades que permiten la verificación de autenticidad, trazabilidad, medición e informes de la huella de carbono de productos o servicios. Además, facilita mediciones en el sitio o monitoreo remoto del impacto ambiental del proceso productivo.
 
-## Key Features
+Características Clave
+Verificación de Autenticidad: Escaneo de códigos QR para autenticar productos o servicios.
+Trazabilidad: Seguimiento detallado del origen y recorrido de productos o servicios.
+Medición de la Huella de Carbono: Información sobre la huella de carbono asociada a cada producto o servicio.
+Monitoreo Ambiental: Mediciones en el sitio y monitoreo remoto del impacto ambiental del proceso productivo.
 
-1. **DAO for Producers:**
-   - Verification of producer existence.
-   - Validation of product production under defined conditions.
-   - Confirmation of the geographical zone associated with the denomination of origin.
+Arquitectura en Capas
+Capa 1: DAO de Productores
+Compuesta por productores reconocidos vinculados a designaciones de origen protegidas.
+Establecimiento de estándares en procesos de producción e impacto ambiental.
+Votación y validación de procesos de acuerdo a los requisitos de la DAO.
+Capa 2: DAO de Expertos Técnicos
+Expertos profesionales validan el cumplimiento de estándares y especificaciones.
+Verificación del origen y especificaciones geográficas.
+Capa 3: Dispositivos IoT
+Contraste de datos capturados con parámetros definidos por la DAO.
+Verificación de datos con fuentes oficiales para confirmar autenticidad y origen.
 
-2. **IoT Devices Layer:**
-   - Capture of climatological conditions by IoT devices.
-   - Validation of captured conditions against AccuWeather data in the certification zone.
+Uso de la Plataforma
+La plataforma permite a los consumidores verificar la autenticidad de productos o servicios escaneando códigos QR con sus dispositivos móviles. Proporciona información detallada sobre la trazabilidad y la huella de carbono asociada a los productos o servicios.
 
-3. **Certification DAO:**
-   - Certification of products and processes.
-   - Involvement of authorized experts in the certification process.
+Tecnologías Utilizadas
+ICP (Protocolo de Computación en Internet): Utilizado como protocolo base para la plataforma.
+Motoko: Lenguaje de programación utilizado para el desarrollo en la red de ICP.
+Azle: Herramienta de desarrollo en el entorno de ICP.
+TypeScript: Lenguaje de programación utilizado para el desarrollo adicional.
 
-## Validation Process
+Contribución
+¡Agradecemos las contribuciones! Si deseas contribuir al proyecto, contáctanos.
 
-CoopDAO executes a three-stage validation process, combining information from the DAO for Producers, IoT devices, and the Certification DAO. The result is a reliability index representing the product's authenticity.
+Contacto
+Para más información, contáctanos en contact@ecotrace.com.
 
-## Accessing Information
+Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE.md para más detalles.
 
-End consumers can access information by scanning the barcode attached to the product. An intuitive user interface will display:
+================================================================================================================
 
-- **Reliability Index:** The average reliability obtained from the three validation layers.
-- **Product Data:** Detailed information about the certified product.
-- **Denomination of Origin:** Details associated with the geographical zone of certification.
+EcoTrace
+Project Description
+EcoTrace is a software platform developed using Motoko, azle, and TypeScript, based on the ICP (Internet Computer Protocol). It offers a variety of functionalities that enable the verification of authenticity, traceability, measurement, and reporting of the carbon footprint of products or services. Additionally, it facilitates on-site measurements or remote monitoring of the environmental impact of the production process.
 
-## Technologies Used
+Key Features
+Authenticity Verification: QR code scanning to authenticate products or services.
+Traceability: Detailed tracking of the origin and journey of products or services.
+Carbon Footprint Measurement: Information regarding the carbon footprint associated with each product or service.
+Environmental Monitoring: On-site measurements and remote monitoring of the environmental impact of the production process.
+Layered Architecture
+Layer 1: Producers DAO
+Comprised of recognized producers linked to protected designations of origin.
+Establishment of standards in production processes and environmental impact.
+Voting and validation of processes according to DAO requirements.
+Layer 2: Technical Expert DAO
+Professional experts validate compliance with standards and specifications.
+Verification of origin and geographical specifications.
+Layer 3: IoT Devices
+Contrasting captured data with parameters defined by DAO.
+Data verification with official sources to confirm authenticity and origin.
+Platform Usage
+The platform enables consumers to verify the authenticity of products or services by scanning QR codes with their mobile devices. It provides detailed information on traceability and the carbon footprint associated with the products or services.
 
-- **ICP (Internet Computer Protocol):** Foundation for decentralized platform development.
-- **Smart Contracts:** Implementation for business logic and interactions between layers.
-- **IoT Devices:** Integration for capturing and validating climatological data.
-- **AccuWeather API:** Data source for validating climatic conditions.
-- **Web User Interface:** Developed for presenting information to end consumers.
+Technologies Used
+ICP (Internet Computer Protocol): Used as the foundational protocol for the platform.
+Motoko: Programming language used for development on the ICP network.
+Azle: Development tool in the ICP environment.
+TypeScript: Programming language used for additional development.
+Contribution
+We welcome contributions! If you wish to contribute to the project, please contact us.
 
-## Contributions
+Contact
+For more information, contact us at contact@ecotrace.com.
 
-Contribute to the development of CoopDAO! If you have suggestions, issues, or improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is under the MIT License. See the [LICENSE.md](LICENSE.md) file for more details.
-
-==================================================================
-
-# azle_ddo - Dao para Denominación de Origen.
-
-azle_ddo es una plataforma descentralizada construida sobre el protocolo de Internet Computer (ICP) que ofrece un sistema robusto para validar Certificados de Origen de productos. La plataforma utiliza un enfoque de tres capas para garantizar la autenticidad y la fiabilidad de la certificación de origen.
-
-## Características Principales
-
-1. **DAO de Productores:**
-   - Verificación de la existencia del productor.
-   - Validación de la producción bajo condiciones definidas.
-   - Confirmación de la zona geográfica asociada a la denominación de origen.
-
-2. **Dispositivos IoT:**
-   - Captura de condiciones climatológicas por dispositivos IoT.
-   - Validación de las condiciones climáticas con datos de AccuWeather.
-   - Asociación con la zona de certificación de origen.
-
-3. **DAO de Certificación:**
-   - Certificación de productos y procesos.
-   - Participación de expertos autorizados en el proceso de certificación.
-
-## Proceso de Validación
-
-La plataforma CoopDAO ejecuta un proceso de validación en tres etapas, combinando la información de las DAO de Productores, los dispositivos IoT y la DAO de Certificación. El resultado es un índice de fiabilidad que representa la autenticidad del producto certificado.
-
-## Acceso a la Información
-
-El consumidor final puede acceder a la información mediante un escaneo del código de barras adjunto al producto. Una interfaz de usuario intuitiva mostrará:
-
-- **Índice de Fiabilidad:** El promedio de fiabilidad obtenido de las tres capas de validación.
-- **Datos del Producto:** Información detallada sobre el producto certificado.
-- **Denominación de Origen:** Detalles asociados a la zona geográfica de la certificación.
-
-## Tecnologías Utilizadas
-
-- **ICP (Internet Computer Protocol):** Base tecnológica para la construcción descentralizada de la plataforma.
-- **Contratos Inteligentes:** Implementación para la lógica de negocio y las interacciones entre las capas.
-- **Dispositivos IoT:** Integración para la captura y validación de datos climatológicos.
-- **AccuWeather API:** Fuente de datos para la validación de las condiciones climáticas.
-- **Interfaz de Usuario Web:** Desarrollada para la presentación de información al consumidor final.
-
-## Contribuciones
-
-¡Contribuye al desarrollo de CoopDAO! Si tienes sugerencias, problemas o mejoras, no dudes en abrir un problema o enviar una solicitud de extracción.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
+License
+This project is licensed under the MIT License. See the LICENSE.md file for more details.
